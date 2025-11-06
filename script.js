@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleDark = document.getElementById("toggleDark");
   const voiceBtn = document.getElementById("voiceBtn");
 
- 
+  const voiceBtn = document.getElementById("voiceBtn");
+
+  
   // Theme handler
   function setDarkMode(mode) {
     if (mode === "dark") {
@@ -155,6 +157,7 @@ async function translateToOromo(text) {
   const data = await res.json();
   return data.data.translations[0].translatedText;
 }
+
 
 
 
