@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  const voiceBtn = document.getElementById("voiceBtn");
 
   
   // Theme handler
@@ -158,6 +159,7 @@ async function translateToOromo(text) {
   const data = await res.json();
   return data.data.translations[0].translatedText;
 }
+
 
 
 
